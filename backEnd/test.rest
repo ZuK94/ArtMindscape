@@ -1,0 +1,52 @@
+@local = http://localhost:3001
+@token =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDcxMTY2OWY0NzE3NjFmNzMxNDlmYjciLCJyb2xlIjoid2ViLWFkbWluIiwiaWF0IjoxNjg1MTkyMDA3fQ.xxfr6Kt8dapFe_0OflElNa-EWa6xKSwGZBBmpQqYrdc
+
+### USER LOGIN - auth log-in
+GET {{local}}/auth/
+# auth-token: {{token}}
+Content-Type: application/json
+
+{
+    "email":"david2@ms.com",
+    "password":"1234Dd!8"
+}
+### NEW USER - users/new-user
+POST {{local}}/users/new-user
+Content-Type: application/json
+
+{
+    "name":"new name",
+    "email":"david2@ms.com",
+    "password":"1234Dd!8",
+    "admin":false
+}
+###
+
+GET {{local}}/users/all
+x-auth-token: {{token}}
+Content-Type: application/json
+
+{
+    "hello":"world"
+}
+###
+POST {{local}}/api/text2image
+Content-Type: application/json
+x-auth-token :{{token}}
+
+{"params":{
+    "prompt":"hello", "guidance":10, "steps":30, "sampler":"euler_a", "upscale":1, "negative_prompt":"face", "model":"epic_diffusion_1_1"
+}}
+
+
+###
+POST {{local}}/art/uploadNewImage
+x-auth-token :{{token}}
+Content-Type: application/json
+
+{
+    "params":"truck"
+}
+###
+GET {{local}}/art/creator-collection/64711669f471761f73149fb7?page=1
+x-auth-token : {{token}}

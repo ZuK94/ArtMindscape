@@ -1,0 +1,96 @@
+$purple: rgb(161 123 185);
+$light-grey: rgb(248, 249, 250);
+$text-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+$light-text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
+
+.sign-up-plans {
+  max-width: 60rem !important;
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    ul {
+      padding: 1rem;
+      margin: auto;
+    }
+  }
+  .sign-up-check {
+    font-size: 1.2rem;
+    color: $purple;
+  }
+}
+.plan-card {
+  max-width: 22rem;
+  width: 100%;
+}
+#image-upload-form {
+  img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain;
+  }
+}
+
+.card {
+  &.log-in-card {
+    background-color: $light-grey;
+    max-width: 35em;
+    margin: 0 auto 1.5em auto;
+  }
+  &.art-card {
+    .card-body {
+      overflow: hidden;
+    }
+    .creator-link {
+      font-weight: 500;
+      color: $purple;
+      cursor: pointer;
+    }
+    .like-btn {
+      color: $purple;
+      text-decoration: none;
+      min-width: 50px !important;
+
+      &:hover {
+      }
+    }
+    .image-name-display {
+      overflow: hidden;
+    }
+  }
+  &.user-card {
+    display: flex;
+    width: 35rem;
+
+    .key {
+      font-weight: 400 !important;
+      font-style: italic;
+    }
+    ul li {
+      font-weight: 500;
+      display: flex;
+
+      .bi {
+        cursor: pointer;
+        padding: 2px 8px 2px 12px;
+        margin: auto 0;
+        &:hover {
+          color: red;
+        }
+      }
+      .save-btn {
+        margin: auto 0 auto auto;
+      }
+    }
+    .card-img-top {
+      padding: 10px 0;
+      img {
+        border-radius: 50%;
+        max-width: 150px;
+      }
+      #user-info {
+        padding: 10px 15px;
+        text-align: start;
+      }
+    }
+  }
+}

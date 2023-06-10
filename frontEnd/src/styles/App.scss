@@ -1,0 +1,119 @@
+$purple: rgb(161 123 185);
+$light-grey: rgb(248, 249, 250);
+$text-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+$light-text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
+
+@import "../../node_modules/rfs/sass";
+.text-small {
+  @include font-size(0.9rem !important);
+}
+.text-large {
+  @include font-size(1.3rem !important);
+}
+@media (max-width: 720px) {
+  .text-large {
+    @include font-size(0.9rem !important);
+  }
+}
+
+.purple {
+  color: $purple;
+  text-shadow: $light-text-shadow;
+}
+
+.App {
+  text-align: center;
+}
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  padding-right: 30px;
+}
+
+.input-wrapper button {
+  position: absolute;
+  top: 40%;
+  right: 3em;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+body main form .button {
+  border: none !important;
+  background-color: "#ffffff" !important;
+  padding: 0 !important;
+}
+#home-header {
+  background: url(../media/home-cover.jpg);
+  min-height: 80vh;
+  height: fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .overlay {
+    min-height: 80vh !important;
+  }
+  &.text-shadow {
+    text-shadow: $text-shadow;
+  }
+  #home-tip {
+    font-weight: 500;
+  }
+}
+
+.overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(87, 87, 87, 0.2);
+  z-index: 2;
+}
+
+.about-hero {
+  min-height: 100vh;
+  .lead {
+    font-weight: 400;
+  }
+}
+
+.home-btn {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 10px;
+  max-width: 200px;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+
+  transition: 0.4s;
+
+  &:hover {
+    color: white;
+    box-shadow: 0 0 20px rgba(170, 157, 255, 0.651);
+    background-color: $purple;
+  }
+}
+
+.reg {
+  color: white;
+  background-color: $purple;
+}
+
+.log {
+  color: rgb(104, 85, 224);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid $purple;
+}
+
+.box {
+  background-color: $purple;
+  opacity: 0.75;
+}
