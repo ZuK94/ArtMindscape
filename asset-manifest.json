@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ArtMindscape/static/css/main.1693913b.css",
+    "main.js": "/ArtMindscape/static/js/main.6d3b784d.js",
+    "static/js/787.4cc46ce8.chunk.js": "/ArtMindscape/static/js/787.4cc46ce8.chunk.js",
+    "static/media/home-cover.jpg": "/ArtMindscape/static/media/home-cover.fc2e45b678eeb4ca9325.jpg",
+    "static/media/mindscapeAlbum.png": "/ArtMindscape/static/media/mindscapeAlbum.fecbf6aa338af966807e.png",
+    "static/media/mindscapeCollections.png": "/ArtMindscape/static/media/mindscapeCollections.fbb5efc590f76c4c887f.png",
+    "static/media/mindscapeCreate.png": "/ArtMindscape/static/media/mindscapeCreate.1aa7a5f4ed6ec3f64279.png",
+    "static/media/bootstrap-icons.woff?": "/ArtMindscape/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/bootstrap-icons.woff2?": "/ArtMindscape/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
+    "static/media/mindscapeProfile.png": "/ArtMindscape/static/media/mindscapeProfile.5ef2af3e28a4dfb74e4f.png",
+    "static/media/aiGenerated.jpg": "/ArtMindscape/static/media/aiGenerated.a95f8eb1db0d778f7014.jpg",
+    "static/media/mindscapeAdmin.png": "/ArtMindscape/static/media/mindscapeAdmin.b6fb7f656c0fee598143.png",
+    "static/media/mindscapeSignup.png": "/ArtMindscape/static/media/mindscapeSignup.87c71a311b89dfbaf899.png",
+    "static/media/mindscapeNav.png": "/ArtMindscape/static/media/mindscapeNav.2fb618e2f5bbb4bd7c33.png",
+    "index.html": "/ArtMindscape/index.html",
+    "main.1693913b.css.map": "/ArtMindscape/static/css/main.1693913b.css.map",
+    "main.6d3b784d.js.map": "/ArtMindscape/static/js/main.6d3b784d.js.map",
+    "787.4cc46ce8.chunk.js.map": "/ArtMindscape/static/js/787.4cc46ce8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1693913b.css",
+    "static/js/main.6d3b784d.js"
+  ]
+}
