@@ -24,7 +24,7 @@ import UserProfile from "./components/userProfile";
 function App() {
   return (
     <div className="App d-flex flex-column min-vh-100">
-      <Routes basename="/ArtMindscape">
+      <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route

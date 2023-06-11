@@ -10,7 +10,7 @@ import { AuthProvider } from "./context/authContextProvider";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/ArtMindscape">
     <AuthProvider>
       <App />
     </AuthProvider>
