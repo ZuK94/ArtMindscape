@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ArtMindscape/static/css/main.1693913b.css",
-    "main.js": "/ArtMindscape/static/js/main.6d3b784d.js",
+    "main.js": "/ArtMindscape/static/js/main.9043ef96.js",
     "static/js/787.4cc46ce8.chunk.js": "/ArtMindscape/static/js/787.4cc46ce8.chunk.js",
     "static/media/home-cover.jpg": "/ArtMindscape/static/media/home-cover.fc2e45b678eeb4ca9325.jpg",
     "static/media/mindscapeAlbum.png": "/ArtMindscape/static/media/mindscapeAlbum.fecbf6aa338af966807e.png",
@@ -16,11 +16,11 @@
     "static/media/mindscapeNav.png": "/ArtMindscape/static/media/mindscapeNav.2fb618e2f5bbb4bd7c33.png",
     "index.html": "/ArtMindscape/index.html",
     "main.1693913b.css.map": "/ArtMindscape/static/css/main.1693913b.css.map",
-    "main.6d3b784d.js.map": "/ArtMindscape/static/js/main.6d3b784d.js.map",
+    "main.9043ef96.js.map": "/ArtMindscape/static/js/main.9043ef96.js.map",
     "787.4cc46ce8.chunk.js.map": "/ArtMindscape/static/js/787.4cc46ce8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1693913b.css",
-    "static/js/main.6d3b784d.js"
+    "static/js/main.9043ef96.js"
   ]
 }

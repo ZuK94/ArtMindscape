@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# ArtMindscape
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ArtMindscape is a website for creating art with AI models via text prompts. It leverages the Dezgo API to provide a seamless and intuitive art creation experience. The website allows users to generate unique artwork by combining their creativity with the power of Artificial Intelligence.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- AI-powered art creation using text prompts
+- Conditional routing for three types of users:
+  - Viewer: Can view the main album, like content, and sort content by "liked" for easy access.
+  - Editor: Can create content, own a private collection, like content, and enjoy all features available to viewers.
+  - Web-admin: Has all the capabilities of an editor and access to a dashboard for user role management.
+- Search functionality:
+  - Search art by name or creator name in the main album.
+  - Search users by name or email in the dashboard.
+- Like system: Users can like their favorite art pieces and later access them easily.
+- Sharing to the main album: Editors can share art from their private collection to the main album.
+- Profile editing: Users can edit their name, email, and avatar in their profile section.
+- CRUD options: Users can edit the art name, delete creations, and perform all other CRUD operations.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project is built using the following technologies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Frontend
 
-### `npm test`
+- React
+- React Router DOM
+- Formik
+- Axios
+- Bootstrap
+- React Bootstrap
+- Lottie React
+- React Toastify
+- Sass
+- Joi
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
 
-### `npm run build`
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- Bcrypt
+- JSONWebToken
+- Lodash
+- Nodemon
+- Cors
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js
+- MongoDB
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/ZuK94/artmindscape.git
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install the frontend dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   cd artmindscape/frontend
+   npm install
+   ```
 
-## Learn More
+3. Install the backend dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   cd ../backend
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Configure the environment variables:
 
-### Code Splitting
+   - Create a .env file in the backend directory.
+   - Define the necessary environment variables (Dezgo API credentials (API_HOST = "dezgo.p.rapidapi.com" and API_KEY wich has to be acquired via dezgo API), and SECRET_TOKEN for bcrypt operation.) in the .env file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Start the development server:
 
-### Analyzing the Bundle Size
+   For the frontend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   cd ../frontend
+   npm start
+   ```
 
-### Making a Progressive Web App
+   For the backend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   cd ../backend
+   npm start
+   ```
 
-### Advanced Configuration
+Access the application at http://localhost:3000 in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Creator
 
-### Deployment
+zuk94 - david zyulkovsky
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
